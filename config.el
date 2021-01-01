@@ -37,7 +37,7 @@
 (setq display-line-numbers-type t)
 
 ;; add path to build in Emacs help
-(add-to-list 'Info-directory-list "d:/emacs/27.1/share/info")
+(add-to-list 'Info-directory-list "c:/emacs/27.1/share/info")
 
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
