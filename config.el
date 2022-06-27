@@ -39,6 +39,18 @@
 ;; add path to build in Emacs help
 (add-to-list 'Info-directory-list "c:/emacs/28.1/share/info")
 
+;;(setq highlight-indent-guides-method 'character)
+;;(set-face-foreground 'highlight-indent-guides-character-face "dimgray")
+;;(add-hook! 'prog-mode-hook 'highlight-indent-guides-mode)
+
+(use-package! highlight-indent-guides
+  :init
+  (setq highlight-indent-guides-method 'character)
+  :hook
+  (prog-mode-hook . highlight-indent-guides-mode)
+  :config
+  (set-face-foreground 'highlight-indent-guides-character-face "dimgray"))
+
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
